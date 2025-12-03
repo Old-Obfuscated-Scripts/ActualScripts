@@ -1,0 +1,17 @@
+local lib = loadstring(game:HttpGet("https://github.com/Old-Obfuscated-Scripts/ActualScripts/blob/main/uilib.lua?raw=true"))()
+
+lib:new("asdasd", UDim2.new(0.74931, 0, 0.84858, 0))
+lib.Tree:CreateTab("Home", "rbxassetid://10723407389")
+lib.Tree:CreateTab("Player", "rbxassetid://10747373176")
+lib.Tree:Button("Home", "Print hi", function()
+	print("hi")
+end)
+lib.Tree:Label("Home", "This is a label!")
+lib.Tree:Warning("Home", "This is a warning!")
+lib.Tree:Info("Home", "This is a infomation label")
+lib.Tree:Slider("Home", "Speed", 16, 250, 16, function(v)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+lib.Tree:Toggle("Home", "Bazinga",false, function(v)
+	print(tostring(v))
+end)
